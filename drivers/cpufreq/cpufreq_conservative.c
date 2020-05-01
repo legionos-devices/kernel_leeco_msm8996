@@ -15,11 +15,11 @@
 #include "cpufreq_governor.h"
 
 /* Conservative governor macros */
-#define DEF_FREQUENCY_UP_THRESHOLD		(80)
-#define DEF_FREQUENCY_DOWN_THRESHOLD		(20)
-#define DEF_FREQUENCY_STEP			(5)
+#define DEF_FREQUENCY_UP_THRESHOLD		(70)
+#define DEF_FREQUENCY_DOWN_THRESHOLD		(40)
+#define DEF_FREQUENCY_STEP			(10)
 #define DEF_SAMPLING_DOWN_FACTOR		(1)
-#define MAX_SAMPLING_DOWN_FACTOR		(10)
+#define MAX_SAMPLING_DOWN_FACTOR		(20)
 
 static DEFINE_PER_CPU(struct cs_cpu_dbs_info_s, cs_cpu_dbs_info);
 static DEFINE_PER_CPU(struct cs_dbs_tuners *, cached_tuners);
