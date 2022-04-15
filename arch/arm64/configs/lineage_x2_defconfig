@@ -2043,7 +2043,7 @@ CONFIG_I2C_HELPER_AUTO=y
 #
 # I2C Hardware Bus support
 #
-
+CONFIG_MSM_CAPTOUCH=y
 #
 # PC SMBus host controller drivers
 #
