@@ -1,6 +1,7 @@
 # Disable void-pointer-to-enum-cast
 ifeq ($(cc-name),clang)
 EXTRA_CFLAGS += $(call cc-disable-warning, void-pointer-to-enum-cast)
+EXTRA_CFLAGS += $(call cc-disable-warning, bitwise-instead-of-logical)
 endif
 
 ccflags-$(CONFIG_POWER_SUPPLY_DEBUG) := -DDEBUG
